@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d98ad4c4e8a24c4a8907be0899cc5ad, type: 3}
+  m_Name: Spade_13
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  cardName: Spade_K
+  value: 13
+  suit: 0
+  artwork: {fileID: 0}
+  description: 
