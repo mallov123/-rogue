@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 857702934371210095}
   - component: {fileID: 1775825382754728951}
   - component: {fileID: 5800705501680391551}
-  - component: {fileID: 3292939828881823669}
+  - component: {fileID: 4050761212309469005}
   m_Layer: 5
   m_Name: CardPrefab
   m_TagString: Untagged
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3292939828881823669
+--- !u!114 &4050761212309469005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,14 +162,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6557433981239649947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 057e3b2a2f2258a4e9116024548c5ed7, type: 3}
+  m_Script: {fileID: 11500000, guid: f05ac3d738c0181488dfae78379a67f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Card
-  artworkImage: {fileID: 0}
-  valueText: {fileID: 0}
-  suitText: {fileID: 0}
-  suitColorImage: {fileID: 0}
-  selectionHighlight: {fileID: 0}
+  data: {fileID: 0}
+  artworkImage: {fileID: 7791367366082944376}
+  selectionHighlight: {fileID: 6435999801411034702}
 --- !u!1 &7642203906221759689
 GameObject:
   m_ObjectHideFlags: 0
