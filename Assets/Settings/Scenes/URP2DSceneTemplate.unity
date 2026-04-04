@@ -1488,7 +1488,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 9, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1903,7 +1903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &619394801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1972,7 +1972,11 @@ MonoBehaviour:
         m_SelectedSource:
           rid: -2
         m_Provider2DCache:
-          rid: -2
+          rid: 7194323481037373518
+    - rid: 7194323481037373518
+      type: {class: 'Provider2DCache`1[[UnityEngine.Rendering.Universal.Light2DProvider, Unity.RenderPipelines.Universal.2D.Runtime]]', ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
+      data:
+        m_Cache: []
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -2897,7 +2901,20 @@ MonoBehaviour:
   handUI: {fileID: 820257710}
   scoreGaugeUI: {fileID: 820257709}
   playerStatusUI: {fileID: 820257711}
-  allCards: []
+  allCards:
+  - {fileID: 11400000, guid: 557888add5fb4cb429f43cdb6c4932a1, type: 2}
+  - {fileID: 11400000, guid: ccc7db6a25cc42d429377c2507c9ed9c, type: 2}
+  - {fileID: 11400000, guid: 22eef57da13b89a44b3e81688506b683, type: 2}
+  - {fileID: 11400000, guid: 2c5149a461295ec40aaf52a40383e49e, type: 2}
+  - {fileID: 11400000, guid: c0da8e592438493489c3b0c1162f8830, type: 2}
+  - {fileID: 11400000, guid: 86b748c70ec171248b08cdefbb0c74ae, type: 2}
+  - {fileID: 11400000, guid: ec16cca9bf4b5fb4d8130a15e333c126, type: 2}
+  - {fileID: 11400000, guid: df30cd844d5510c49b822c2af2143826, type: 2}
+  - {fileID: 11400000, guid: 884b63ec026566244afaab272dac47de, type: 2}
+  - {fileID: 11400000, guid: 32b1baf885f95ce489e51340351956b2, type: 2}
+  - {fileID: 11400000, guid: 7b4f69e1497b6384197047de3ac0cc28, type: 2}
+  - {fileID: 11400000, guid: ca000e2f6bb99f2498befd3d48f4ed1d, type: 2}
+  - {fileID: 11400000, guid: 217c6d035f15afd4781a479b7f445c9c, type: 2}
 --- !u!4 &820257714
 Transform:
   m_ObjectHideFlags: 0
@@ -4453,7 +4470,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u62BD\u724C\n"
+  m_text: "\u51FA\u724C\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eed0a72183ae0844bba5341d30ea7823, type: 2}
   m_sharedMaterial: {fileID: -8798678505413446342, guid: eed0a72183ae0844bba5341d30ea7823, type: 2}
@@ -5528,7 +5545,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1994463423}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1994463423
 MonoBehaviour:
   m_ObjectHideFlags: 0
