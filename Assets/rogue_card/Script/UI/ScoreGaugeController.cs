@@ -32,7 +32,7 @@ public class ScoreGaugeController : MonoBehaviour
     private float  _targetScore;
     private Coroutine _animRoutine;
 
-    private void Start()
+    private void Awake()
     {
         scoreSlider.minValue = 0;
         scoreSlider.maxValue = 1; // 归一化

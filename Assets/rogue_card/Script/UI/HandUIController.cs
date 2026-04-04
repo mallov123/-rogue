@@ -18,9 +18,9 @@ public class HandUIController : MonoBehaviour
     // 当前实例化的手牌 GameObject（CardData → Card 组件）
     private readonly Dictionary<CardData, Card> _cardViews = new();
 
-    private void Start()
+    private void Awake()
     {
-        deckManager.OnHandChanged += RefreshHand;
+        deckManager.OnHandChanged            += RefreshHand;
         battleManager.OnSelectedCardsChanged += SyncHighlights;
     }
 

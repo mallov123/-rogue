@@ -24,9 +24,9 @@ public class BattleUIController : MonoBehaviour
     [Tooltip("拖入所有52张（或测试用）CardData asset")]
     public CardData[] allCards;
 
-    private void Start()
+    private void Awake()
     {
-        // 订阅事件
+        // 订阅事件（Awake 保证在所有 Start 之前完成）
         battleManager.OnStateChanged         += HandleStateChanged;
         battleManager.OnHandEvaluated        += HandleHandEvaluated;
         battleManager.OnScoreChanged         += scoreGaugeUI.UpdateScore;
@@ -40,8 +40,11 @@ public class BattleUIController : MonoBehaviour
         discardButton.onClick.AddListener(OnDiscard);
 
         SetButtonsInteractable(false, false);
+    }
 
-        // 启动战斗
+    private void Start()
+    {
+        // 所有 Awake 执行完毕后再启动战斗，确保所有事件已订阅
         battleManager.StartBattle(new System.Collections.Generic.List<CardData>(allCards));
     }
 
@@ -55,6 +58,9 @@ public class BattleUIController : MonoBehaviour
         battleManager.OnPlayerHPChanged      -= playerStatusUI.UpdateHP;
         battleManager.OnPlayerBlockChanged   -= playerStatusUI.UpdateBlock;
         battleManager.OnSelectedCardsChanged -= HandleSelectionChanged;
+
+        playHandButton.onClick.RemoveListener(OnPlayHand);
+        discardButton.onClick.RemoveListener(OnDiscard);
     }
 
     // ── 状态切换 ──────────────────────────────────

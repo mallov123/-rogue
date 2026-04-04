@@ -21,11 +21,11 @@ public class PlayerStatusUIController : MonoBehaviour
     [Tooltip("引用 DeckManager 以订阅牌堆数量事件")]
     public DeckManager deckManager;
 
-    private void Start()
+    private void Awake()
     {
         if (deckManager != null)
         {
-            deckManager.OnPileCountChanged      += UpdatePileCounts;
+            deckManager.OnPileCountChanged         += UpdatePileCounts;
             deckManager.OnDiscardsRemainingChanged += UpdateDiscardsRemaining;
         }
     }

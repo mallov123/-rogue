@@ -26,19 +26,22 @@ public class EnemyUIController : MonoBehaviour
 
     private readonly List<GameObject> _statusIcons = new();
 
-    private void Start()
+    private void Awake()
     {
         enemy.OnHPChanged      += UpdateHP;
         enemy.OnBlockChanged   += UpdateBlock;
         enemy.OnEffectsChanged += UpdateStatusEffects;
         enemy.OnIntentChanged  += UpdateIntent;
+    }
 
-        // 初始化静态显示
+    private void Start()
+    {
+        // 初始化静态显示（enemy.Initialize 已在 BattleManager.StartBattle 中调用）
         nameText.text = enemy.data.enemyName;
         if (enemy.data.enemySprite != null)
             enemySprite.sprite = enemy.data.enemySprite;
 
-        hpBar.maxValue   = enemy.MaxHP;
+        hpBar.maxValue    = enemy.MaxHP;
         blockBar.maxValue = enemy.MaxHP;
     }
 
