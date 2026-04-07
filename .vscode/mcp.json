@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "ai-game-developer": {
+      "headers": {
+        "Authorization": "Bearer yO9EigQ41c28RS12f1USCD1Bj80WGEPzjwyxlHdXk4Q"
+      },
+      "type": "http",
+      "url": "http://localhost:26210"
+    }
+  }
+}

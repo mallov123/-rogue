@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CardData
   suit: 3
   value: 1
-  artwork: {fileID: 0}
+  artwork: {fileID: 7314488799944481144, guid: 94ab9549fb46de1408d7007609ebe1f3, type: 3}
